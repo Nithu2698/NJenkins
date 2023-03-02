@@ -5,5 +5,9 @@ Feature: E2E adding product to cart
 		 And Add the laptop to cart
     Then Validating if its added or not
     
+    Scenario: Adding to cart
+    Given HomePage
+    
+    
 
  

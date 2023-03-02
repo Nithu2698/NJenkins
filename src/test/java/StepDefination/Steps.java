@@ -56,6 +56,15 @@ public class Steps
 	System.out.println(b);
 	//Assert.assertEquals("Macbook Pro", b);
 	}
+	@Given("HomePage")
+	public void home_page()
+	{
+		 WebDriverManager.chromedriver().setup();
+		 driver = new ChromeDriver();
+		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+		 driver.get("https://www.demoblaze.com/");
+		 driver.manage().window().maximize(); 
+	}
 
 	
 }
