@@ -8,7 +8,7 @@ pipeline{
               }
               stage('Test stage'){
                                  steps{
-                                      bat 'mvn -B clean install'
+                                      bat 'mvn -B clean install' 
                                      }
              }
              stage('Cucumber Report'){
